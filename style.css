@@ -4,7 +4,35 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
+    margin: 0%;
 }
+
+.sidebar {
+    background-color: rgb(3, 153, 223);
+    grid-row: 1/5;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    gap: 4%;
+    color: white;
+}
+
+.sidebar #dashboard,
+.sidebar .middle > div,
+.sidebar .lower > div
+{
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+
+
+.sidebar svg {
+    width: 10%;
+    height: 10%;
+    fill: white;
+}
+
 
 .header {
     grid-column: 2/5;
@@ -13,13 +41,67 @@ body {
     box-shadow: 3px;
 }
 
-.sidebar {
-    background-color: blue;
-    grid-row: 1/5;
-}
+
 
 .main-container {
     grid-column: 2/5;
     grid-row: 2/5;
-    background-color: aqua;
+    background-color: gainsboro;
+    display: flex;
+    padding: 2%;
+    gap: 2%;
+}
+
+.your-project {
+    width: 70%;
+    /* background-color: blueviolet; */
+}
+
+.heading {
+    height: 5;
+}
+
+.projects {
+    /* background-color: blue; */
+    height: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.projects>div {
+    /* background-color: brown; */
+    border-left: 3px solid orange;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.notification {
+    background-color: beige;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* display: grid; */
+    gap: 10px;
+}
+
+.notification>div {
+    height: 45%;
+    border: 2px solid green;
+    /* overflow: scroll; */
+}
+
+.announcement_box>div {
+    border-bottom: 2px solid blue;
+    height: 33%;
+}
+
+.announcement_box {
+    padding-left: 3%;
+    /* border: 21px solid red; */
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
 }
