@@ -157,3 +157,22 @@ body {
     flex-direction: column;
     overflow: scroll;
 }
+
+.projects div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+
+}
+
+.icons{
+    width: 100%;
+    background-color: green;
+    display: flex;
+}
+
+.icons svg{
+    width: 10%;
+}
