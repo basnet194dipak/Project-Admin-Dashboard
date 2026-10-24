@@ -41,6 +41,18 @@ body {
     box-shadow: 3px;
 }
 
+.header svg
+{
+    width: 10%;
+    /* height: 10%; */
+}
+
+.right
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .upper, .lower{
     height: 50%;
     display: flex;
@@ -87,6 +99,16 @@ body {
     height: 5;
 }
 
+.profile_pic
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    display: flex;
+}
 .projects {
     /* background-color: blue; */
     height: 95%;
@@ -119,6 +141,10 @@ body {
     /* overflow: scroll; */
 }
 
+.right > div
+{
+    color: white;
+}
 .announcement_box>div {
     border-bottom: 2px solid blue;
     height: 33%;
